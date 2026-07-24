@@ -1,0 +1,111 @@
+<!--HTML Form Elements and Attributes
+
+
+HTTPS=>HYpertext transfer protcol
+
+Methods:
+-POST : Creating resource in the server
+-GET : Retrieving a resource from the server
+-DELETE : Removing a resource from the server
+-FETCH : Retrieving a resource from the server
+-PATCH : Updating a resource on the server
+PUT : Updating a resource on the server=-->
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="day 5.css">
+</head>
+<body>
+  <nav>
+    <ul>
+      <li><a href="day 4.html">Home</a></li>
+      <li><a href="day 5.html">About</a></li>
+      <li><a href="day 6.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <form action="submit.php" method="POST">
+  <label for="name">Name:</label>
+  <input type="text" id="name" name="name" required>
+  
+  <label for="email">Email:</label>
+  <input type="email" id="email" name="email" required>
+  
+  <label for="message">Message:</label>
+  <textarea id="message" name="message" required></textarea>
+  
+  <button type="submit">Submit</button>
+</form>
+
+
+
+
+<!--Form input datatypes:
+-number
+- text
+-true/falsw : boolean
+-range
+-color
+-date
+-time
+- media : file upload
+-email
+-password  
+
+id vs class attribute-->
+
+
+<form action="" method="">
+
+  <p>Email: <input type="email"></p>
+
+
+  <p> Age range: <input type="range"> </p>  
+
+<p>DOB:
+    <input type="date">
+</p>
+  
+  <p>password: <input type="password" required minlength="6" maxlength="10" placeholder="Enter password"></p>
+
+  <p>Favorite color: <input type="color"></p>
+  <p>Attachment: <input type="file"></p>
+  <p>Age: <input type="number"></p>
+  <p>Gender:
+    <input type="radio" name="gender">Male
+    <input type="radio" name="gender">Female
+  </p>
+  <select>
+    <option disabled selected> choose country</option>
+    <option> Nigeria</option> 
+    <option> South Africa</option>
+    <option> United States</option>
+    <option> United Kingdom</option>
+  </select>
+           <p>
+    Course:
+    <input type="text" placeholder="Enter course" list="courses">
+</p>
+
+<datalist id="courses">
+    <option value="Web Development">
+    <option value="Cyber Security">
+</datalist>
+
+
+  <input type="reset" value="Clear">
+  <input type="submit" value="Submit">
+    
+
+  
+</form>
+  
+</body>
+</html>
