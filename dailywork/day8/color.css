@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --primary-color: #6b0f1a;
+    --text-color: #ffffff;
+}
+
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 60px;
+    background: #0A1D45;
+}
+
+.logo{
+    color: grey;
+    font-size: 22px;
+    font-weight: bold;
+}
+
+.navbar ul{
+    display: flex;
+    gap: 35px;
+
+}
+
+.navbar ul li a{
+    color: white;
+    font-weight: bold;
+}
+
+.background{
+    height: 85vh;
+
+    background:
+        linear-gradient(rgba(0,0,0,.25), rgba(0,0,0,.25)),
+        url("2face.jpg");
+
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+
+
+.landing-banner{
+    max-width: 850px;
+    color: white;
+}
+
+
+
+.btn{
+    display: flex;
+    padding: 20px 30px;
+    background: grey;
+    color: black;
+    border-radius: 80px;
+    text-decoration: none;
+    font-weight: bold;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+
+   
+}
+
+button:hover{
+    color:aqua;
+    background-color: #0A1D45;
+}
+
+
+
+.services {
+
+    max-width: 1200px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 30px;
+
+    
+   
+    text-align: center;
+
+}
+
+
+.services .img img{
+    width : 30%;
+    height: 30%;
+}
+
+
+
+
